@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    
+</style>
+
+
+<body >
+    <script>
+        function show() {
+            let x = document.getElementById("password");
+            let btn = document.getElementById("hide")
+            if (x.type == "password") {
+                x.type = "text"
+                btn.innerText = "hide"
+            }
+            else {
+                x.type = "password"
+                btn.innerText = "show"
+            }
+        }
+    </script>
+    <center>
+        
+        <input type="password" id="password"><button onclick="show()" id="hide" style="background-color:royalblue;">show</button>
+    </center>
+</body>
+
+</html>
